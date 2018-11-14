@@ -11,6 +11,7 @@ class MP3Importer
     files_array = Dir[@path + "/*.mp3"]
     files_array.collect do |file|
        file.split("/")[-1]
+       binding.pry
     end
   end
   
