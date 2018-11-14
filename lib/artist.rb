@@ -35,7 +35,6 @@ class Artist
     if self.all.find{|person| person.name == name} == nil
       artist = Artist.create(name) 
     else self.all.find{|person| person.name == name}
-    # binding.pry
     end
   end 
   
